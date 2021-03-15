@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Badge from "react-bootstrap/Badge";
 let marked = require("marked")
 
+// ZAPYTAĆ KACPRA JAK WSTAWIĆ GO NA CODEPEN!! --> jeśli sam nie dasz rady (linki do CSS też musisz dać!)
+
 const startText = 
 `# Welcome to my React Markdown Previewer!
 
@@ -28,7 +30,14 @@ And feel free to go crazy ~~crossing stuff out~~.
 
 There's also [links](https://www.freecodecamp.com), and
 > Block Quotes!
+
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+
+![Sweet Doggy](https://momlovesbest.com/wp-content/uploads/2020/07/dog-1.png)
 `
+
 
 function App() {
   const [markdown, setMarkdown] = useState(startText)
@@ -117,12 +126,3 @@ function App() {
 } 
 
 export default App;
-
-
-// po skończeniu user stories dodaj tylko (po wystylowaniu) to powiększanie się dwóch okien jak w FFC przykładzie i jedziesz z clockiem!! (STWÓRZ NOWE REPO)
-// + dodać tło do kodu
-// // + ogarnąć linki blank 
-// (const addTarget = () => {
-//   const links = document.getElementById('preview').querySelectorAll('a');  
-//   links.forEach(l => l.setAttribute("target", "_blank"));
-// }))
