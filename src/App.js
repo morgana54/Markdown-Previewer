@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import Badge from "react-bootstrap/Badge";
 let marked = require("marked")
 
-// ZAPYTAĆ KACPRA JAK WSTAWIĆ GO NA CODEPEN!! --> jeśli sam nie dasz rady (linki do CSS też musisz dać!)
-
 const startText = 
 `# Welcome to my React Markdown Previewer!
 
